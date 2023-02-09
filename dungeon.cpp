@@ -9,4 +9,23 @@ void Dungeon::setUpDungeon() {
       rooms[r][c] = room;
     }
   }
+
+  GameCharacter bat = GameCharacter("Bat", 20, 5);
+  GameCharacter rat = GameCharacter("Rat", 10, 10);
+  GameCharacter troll = GameCharacter("Troll", 100, 10);
+
+  rooms[2][1].enemies.push_back(bat);
+  rooms[1][2].enemies.push_back(rat);
+  rooms[0][0].enemies.push_back(troll);
+
+  item healingPotion;
+  healingPotion.name = "Healing Potion";
+  healingPotion.health = 50;
+
+  item sword;
+  sword.name = "Common sword";
+  sword.damage = 20;
+
+  rooms[1][1].items.push_back(healingPotion);
+  rooms[0][1].items.push_back(sword);
 }

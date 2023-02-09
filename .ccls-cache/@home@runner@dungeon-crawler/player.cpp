@@ -21,3 +21,8 @@ void Player::retreat() {
   currentRoom = previousRoom;
   previousRoom = tempRoom;
 }
+
+void Player::pickUpItem(item item) {
+  damage += item.damage;
+  heal(item.health);
+}

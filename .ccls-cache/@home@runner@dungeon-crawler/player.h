@@ -15,7 +15,7 @@ class Player: public GameCharacter {
 
     void moveToRoom(room *);
     void retreat();
-  
+    void pickUpItem(item);
 };
 
 #endif

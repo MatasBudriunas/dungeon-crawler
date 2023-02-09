@@ -18,6 +18,10 @@ class Game {
     std::vector<std::string> getMovementActions();
     void handleMovementActions();
     void printActions(std::vector<std::string>); 
+    void initiateRoomSequence();
+    void handleEnemyActions();
+    void engageInCombat();
+    void handleItemActions();
 };
 
 #endif
